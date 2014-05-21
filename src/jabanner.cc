@@ -1,7 +1,7 @@
 /*
  * Jabanner
  *
- * Copyright (C) 2007-2008 TAKEI Yuya <i0611238 _at_ coins.tsukuba.ac.jp>
+ * Copyright (C) 2007- TAKEI Yuya <takei.yuya _at_ gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
