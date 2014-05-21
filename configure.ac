@@ -3,7 +3,7 @@
 
 AC_PREREQ(2.61)
 AC_INIT(jabanner, 0.0.9, takei.yuya _at_ gmail.com)
-AM_INIT_AUTOMAKE(jabanner, 0.0.9)
+AM_INIT_AUTOMAKE
 AC_CONFIG_SRCDIR(src/jabanner.cc)
 AM_CONFIG_HEADER(config.h)
 
@@ -56,11 +56,5 @@ fi
 
 # Checks for library functions.
 
-ALL_LINGUAS="ja"
-AM_GNU_GETTEXT
-LOCALEDIR='${prefix}/share/locale'
-AC_SUBST(LOCALEDIR)
-
-AC_CONFIG_FILES([Makefile po/Makefile.in
-		 src/Makefile])
+AC_CONFIG_FILES([Makefile src/Makefile])
 AC_OUTPUT
