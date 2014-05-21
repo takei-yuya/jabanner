@@ -1,0 +1,150 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: takei.yuya _at_ gmail.com\n"
+"POT-Creation-Date: 2008-05-02 17:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/jabanner.cc:93
+#, c-format
+msgid "%1$s Ver.%2$s\n"
+msgstr ""
+
+#: src/jabanner.cc:98
+#, c-format
+msgid "Usage: %s [Options] ... String ...\n"
+msgstr ""
+
+#: src/jabanner.cc:99 src/jabanner.cc:103
+#, c-format
+msgid "\n"
+msgstr ""
+
+#: src/jabanner.cc:100
+#, c-format
+msgid "Print \"banner\" version of string.\n"
+msgstr ""
+
+#: src/jabanner.cc:101
+#, c-format
+msgid "ex) jabanner \"foo bar baz\" ... print \"banner\" in a line.\n"
+msgstr ""
+
+#: src/jabanner.cc:102
+#, c-format
+msgid "ex) jabanner foo bar baz ... print \"banner\" in 3 lines.\n"
+msgstr ""
+
+#: src/jabanner.cc:104
+#, c-format
+msgid "Mandatory arguments to long options are mandatory for short options.\n"
+msgstr ""
+
+#: src/jabanner.cc:105
+#, c-format
+msgid "  -a, --antialias            Use antialias.\n"
+msgstr ""
+
+#: src/jabanner.cc:106
+#, c-format
+msgid ""
+"  -c, --chars=STRING         Charactors that use with antialias.[\"%s\"]\n"
+msgstr ""
+
+#: src/jabanner.cc:107
+#, c-format
+msgid "  -f, --font=FILE            Font file.[%s]\n"
+msgstr ""
+
+#: src/jabanner.cc:108
+#, c-format
+msgid "  -h, --help                 Show this message.\n"
+msgstr ""
+
+#: src/jabanner.cc:110
+#, c-format
+msgid ""
+"  -l, --loop=NUMBER          Scroll banner NUMBER times.(negative value "
+"means infinity)[%d]\n"
+msgstr ""
+
+#: src/jabanner.cc:112
+#, c-format
+msgid ""
+"  -m, --margin=NUMBERs       Set margin.(top,right,bottom,left)[%1$d,%2$d,%3"
+"$d,%4$d]\n"
+msgstr ""
+
+#: src/jabanner.cc:113
+#, c-format
+msgid "  -o, --open=FILE            Use FILE as String.\n"
+msgstr ""
+
+#: src/jabanner.cc:114
+#, c-format
+msgid "  -r, --rotate=NUMBER        Rotate \"banner\".(degree)[%d]\n"
+msgstr ""
+
+#: src/jabanner.cc:115
+#, c-format
+msgid "  -s, --size=NUMBER          Font size(Pt)[%d]\n"
+msgstr ""
+
+#: src/jabanner.cc:117
+#, c-format
+msgid "  -t, --time=NUMBER          Scroll delay.(micro seconds)[%d]\n"
+msgstr ""
+
+#: src/jabanner.cc:119
+#, c-format
+msgid "  -v, --version              Show version.\n"
+msgstr ""
+
+#: src/jabanner.cc:120
+#, c-format
+msgid ""
+"  -w, --width=NUMBER         Set Width.(<0:use terminal width,0:show all)[%"
+"d]\n"
+msgstr ""
+
+#: src/jabanner.cc:122
+#, c-format
+msgid ""
+"  -x, --x                    Scroll banner from right to left.(use ncurses)\n"
+msgstr ""
+
+#: src/jabanner.cc:123
+#, c-format
+msgid ""
+"  -y, --y                    Scroll banner from up to down.(use ncurses)\n"
+msgstr ""
+
+#: src/jabanner.cc:124
+#, c-format
+msgid ""
+"  -X, --X                    Scroll banner from left to right.(use ncurses)\n"
+msgstr ""
+
+#: src/jabanner.cc:125
+#, c-format
+msgid ""
+"  -Y, --Y                    Scroll banner from down to up(use ncurses)\n"
+msgstr ""
+
+#: src/jabanner.cc:126
+#, c-format
+msgid ""
+"  -z, --z                    Scroll banenr with 'h', 'j', 'k', 'l' key.(use "
+"ncurses)\n"
+msgstr ""

@@ -1,0 +1,151 @@
+# Jabanner.
+# Copyright (C) 2008 TAKEI yuya.
+# This file is distributed under the same license as the Jabanner package.
+# TAKEI yuya <i0611238@coins.tsukuba.ac.jp>, 2008.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.0.6\n"
+"Report-Msgid-Bugs-To: takei.yuya _at_ gmail.com\n"
+"POT-Creation-Date: 2008-05-02 17:43+0900\n"
+"PO-Revision-Date: 2008-04-07 19:58+0900\n"
+"Last-Translator: TAKEI yuya <takei.yuya _at_ gmail.com>\n"
+"Language-Team: TAKEI yuya <takei.yuya _at_ gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/jabanner.cc:93
+#, c-format
+msgid "%1$s Ver.%2$s\n"
+msgstr "%1$s Ver.%2$s\n"
+
+#: src/jabanner.cc:98
+#, c-format
+msgid "Usage: %s [Options] ... String ...\n"
+msgstr "使用法: %s [オプション] .. 文字列 ...\n"
+
+#: src/jabanner.cc:99 src/jabanner.cc:103
+#, c-format
+msgid "\n"
+msgstr "\n"
+
+#: src/jabanner.cc:100
+#, c-format
+msgid "Print \"banner\" version of string.\n"
+msgstr "文字列をバナーにして表示します。\n"
+
+#: src/jabanner.cc:101
+#, c-format
+msgid "ex) jabanner \"foo bar baz\" ... print \"banner\" in a line.\n"
+msgstr "例) jabanner \"ほげ ふが ほげら\" ... 一行でバナーを表示します。\n"
+
+#: src/jabanner.cc:102
+#, c-format
+msgid "ex) jabanner foo bar baz ... print \"banner\" in 3 lines.\n"
+msgstr "例) jabanner ほげ ふが ほげら ... 各単語言に改行します。\n"
+
+#: src/jabanner.cc:104
+#, c-format
+msgid "Mandatory arguments to long options are mandatory for short options.\n"
+msgstr "長いオプションに必須の引数は短いオプションにも必須です。\n"
+
+#: src/jabanner.cc:105
+#, c-format
+msgid "  -a, --antialias            Use antialias.\n"
+msgstr "  -a, --antialias            アンチエイリアスを使う\n"
+
+#: src/jabanner.cc:106
+#, c-format
+msgid ""
+"  -c, --chars=STRING         Charactors that use with antialias.[\"%s\"]\n"
+msgstr "  -c, --chars=STRING         アンチエイリアスに使う文字列[\"%s\"]\n"
+
+#: src/jabanner.cc:107
+#, c-format
+msgid "  -f, --font=FILE            Font file.[%s]\n"
+msgstr "  -f, --font=FILE            フォントファイル[%s]\n"
+
+#: src/jabanner.cc:108
+#, c-format
+msgid "  -h, --help                 Show this message.\n"
+msgstr "  -h, --help                 このメッセージを表示する\n"
+
+#: src/jabanner.cc:110
+#, c-format
+msgid ""
+"  -l, --loop=NUMBER          Scroll banner NUMBER times.(negative value "
+"means infinity)[%d]\n"
+msgstr "  -l, --loop=NUMBER          スクロールの回数(<0:無制限)[%d]\n"
+
+#: src/jabanner.cc:112
+#, c-format
+msgid ""
+"  -m, --margin=NUMBERs       Set margin.(top,right,bottom,left)[%1$d,%2$d,%3"
+"$d,%4$d]\n"
+msgstr ""
+"  -m, --margin=NUMBERs       余白(上,右,下,左の順)[%1$d,%2$d,%3$d,%4$d]\n"
+
+#: src/jabanner.cc:113
+#, c-format
+msgid "  -o, --open=FILE            Use FILE as String.\n"
+msgstr "  -o, --open=FILE            文字列の代わりにFILEを使う\n"
+
+#: src/jabanner.cc:114
+#, c-format
+msgid "  -r, --rotate=NUMBER        Rotate \"banner\".(degree)[%d]\n"
+msgstr "  -r, --rorate=NUMBER        文字列を回転させる(度数法)[%d]\n"
+
+#: src/jabanner.cc:115
+#, c-format
+msgid "  -s, --size=NUMBER          Font size(Pt)[%d]\n"
+msgstr "  -s, --size=NUMBER          フォントサイズ(ポイント)[%d]\n"
+
+#: src/jabanner.cc:117
+#, c-format
+msgid "  -t, --time=NUMBER          Scroll delay.(micro seconds)[%d]\n"
+msgstr "  -t, --time=NUMBER          スクロールの遅延(マイクロ秒)[%d]\n"
+
+#: src/jabanner.cc:119
+#, c-format
+msgid "  -v, --version              Show version.\n"
+msgstr "  -v, --version              ヴァージョンを表示する\n"
+
+#: src/jabanner.cc:120
+#, c-format
+msgid ""
+"  -w, --width=NUMBER         Set Width.(<0:use terminal width,0:show all)[%"
+"d]\n"
+msgstr "  -w, --width=NUMBER         表示する幅(<0:自動調整, 0:制限なし)[%d]\n"
+
+#: src/jabanner.cc:122
+#, c-format
+msgid ""
+"  -x, --x                    Scroll banner from right to left.(use ncurses)\n"
+msgstr "  -x, --x                    右から左へスクロールする(use ncurses)\n"
+
+#: src/jabanner.cc:123
+#, c-format
+msgid ""
+"  -y, --y                    Scroll banner from up to down.(use ncurses)\n"
+msgstr "  -y, --y                    上から下へスクロールする(use ncurses)\n"
+
+#: src/jabanner.cc:124
+#, c-format
+msgid ""
+"  -X, --X                    Scroll banner from left to right.(use ncurses)\n"
+msgstr "  -X, --X                    左から右へスクロールする(use ncurses)\n"
+
+#: src/jabanner.cc:125
+#, c-format
+msgid ""
+"  -Y, --Y                    Scroll banner from down to up(use ncurses)\n"
+msgstr "  -Y, --Y                    下から上へスクロールする(use ncurses)\n"
+
+#: src/jabanner.cc:126
+#, c-format
+msgid ""
+"  -z, --z                    Scroll banenr with 'h', 'j', 'k', 'l' key.(use "
+"ncurses)\n"
+msgstr "  -z, --z                    手動スクロール(use ncurses)\n"
