@@ -1,0 +1,6 @@
+./configure
+make
+make install
+
+Jabanner needs GD
+Please install yourself

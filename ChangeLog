@@ -1,0 +1,32 @@
+0.0.3 -> 0.0.4
+-- configure.in
+---- add script what find default font with "find" command
+---- add script what check if use ncurses
+-- src/jabanner.cc
+---- remove "double" function
+
+0.0.4 -> 0.0.5
+-- src/jabanner.cc
+---- bug fix
+
+0.0.5 -> 0.0.6
+-- po/ja.po configure.in Makefile.am po/* intl/* m4/* ...etc
+---- use gettext
+---- TODO: Original source written in "Engrish"
+
+0.0.6 -> 0.0.7
+-- src/intl.h
+-- src/Makefile.am
+---- bug fix for gettext
+-- src/jabanner.cc
+---- Change usage message(TODO: even now written in "Engrish")
+
+0.0.7 -> 0.0.8
+-- src/jabanner.cc
+---- add #include <termios.h> for Windows
+---- add "\n" to usage
+
+0.0.8 -> 0.0.9
+-- src/jabanner.cc
+---- change default font size
+---- add key bind for 'H', 'J', 'K', 'L'...etc
