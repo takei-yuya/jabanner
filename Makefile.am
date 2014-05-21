@@ -1,4 +1,4 @@
-SUBDIRS= intl po src
+SUBDIRS= po src
 #AUTOMAKE_OPTIONS = foreign
 
 src/jabanner: config.h

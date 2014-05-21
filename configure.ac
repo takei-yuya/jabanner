@@ -61,6 +61,6 @@ AM_GNU_GETTEXT
 LOCALEDIR='${prefix}/share/locale'
 AC_SUBST(LOCALEDIR)
 
-AC_CONFIG_FILES([Makefile intl/Makefile po/Makefile.in
+AC_CONFIG_FILES([Makefile po/Makefile.in
 		 src/Makefile])
 AC_OUTPUT
