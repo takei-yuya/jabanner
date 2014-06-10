@@ -1,7 +1,7 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 
-AC_PREREQ([2.69])
+AC_PREREQ([2.63])
 AC_INIT([jabanner], [0.1.0], [takei.yuya _at_ gmail.com])
 AM_INIT_AUTOMAKE
 AC_CONFIG_SRCDIR([src/jabanner.cc])
@@ -57,7 +57,6 @@ else
 fi
 
 # Checks for typedefs, structures, and compiler characteristics.
-AC_CHECK_HEADER_STDBOOL
 
 # Checks for library functions.
 AC_CHECK_FUNCS([dup2 setlocale])
