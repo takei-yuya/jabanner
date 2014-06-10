@@ -399,6 +399,8 @@ int main( int argc, char* argv[] )
 		int i = 0;
 		do {
 			switch( direction ) {
+			case sdNONE:
+				break;
 			case sdLEFT: /* {{{ */
 				for( int x = width; x > 0; x-- ) {
 					pnoutrefresh( pat, 0, x, 0, 0, LINES - 1, COLS - 1 );
