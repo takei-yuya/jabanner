@@ -30,3 +30,8 @@
 -- src/jabanner.cc
 ---- change default font size
 ---- add key bind for 'H', 'J', 'K', 'L'...etc
+
+0.0.9 -> 0.1.0
+-- src/jabanner.cc
+---- change default font size
+---- add key bind for 'H', 'J', 'K', 'L'...etc
