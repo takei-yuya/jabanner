@@ -23,8 +23,6 @@
 #include "config.h"
 #endif
 
-#include "intl.h"
-
 #include <gd.h>
 #include <stdio.h>
 #include <unistd.h>
@@ -90,48 +88,46 @@ int gdImageGetYvalueFormPixel( gdImagePtr im, int x, int y ) /* {{{ */
 
 void version() /* {{{ */
 {
-	printf( _("%1$s Ver.%2$s\n"), PACKAGE_NAME, PACKAGE_VERSION );
+	printf( "%s Ver.%s\n", PACKAGE_NAME, PACKAGE_VERSION );
 } /* }}} */
 
 void usage( int argc, char* argv[] ) /* {{{ */
 {
-	printf( _("Usage: %s [Options] ... String ...\n"), argv[0] );
-	printf( _("\n") );
-	printf( _("Print \"banner\" version of string.\n") );
-	printf( _("ex) jabanner \"foo bar baz\" ... print \"banner\" in a line.\n") );
-	printf( _("ex) jabanner foo bar baz ... print \"banner\" in 3 lines.\n") );
-	printf( _("\n") );
-	printf( _("Mandatory arguments to long options are mandatory for short options.\n") );
-	printf( _("  -a, --antialias            Use antialias.\n") );
-	printf( _("  -c, --chars=STRING         Charactors that use with antialias.[\"%s\"]\n"), DEFAULT_CHARS );
-	printf( _("  -f, --font=FILE            Font file.[%s]\n"), DEFAULT_FONT );
-	printf( _("  -h, --help                 Show this message.\n") );
+	printf( "Usage: %s [Options] ... String ...\n", argv[0] );
+	printf( "\n" );
+	printf( "Print \"banner\" version of string.\n" );
+	printf( "ex) jabanner \"foo bar baz\" ... print \"banner\" in a line.\n" );
+	printf( "ex) jabanner foo bar baz ... print \"banner\" in 3 lines.\n" );
+	printf( "\n" );
+	printf( "Mandatory arguments to long options are mandatory for short options.\n" );
+	printf( "  -a, --antialias            Use antialias.\n" );
+	printf( "  -c, --chars=STRING         Charactors that use with antialias.[\"%s\"]\n", DEFAULT_CHARS );
+	printf( "  -f, --font=FILE            Font file.[%s]\n", DEFAULT_FONT );
+	printf( "  -h, --help                 Show this message.\n" );
 #ifdef HAVE_LIBNCURSES
-	printf( _("  -l, --loop=NUMBER          Scroll banner NUMBER times.(negative value means infinity)[%d]\n"), DEFAULT_LOOP_COUNT );
+	printf( "  -l, --loop=NUMBER          Scroll banner NUMBER times.(negative value means infinity)[%d]\n", DEFAULT_LOOP_COUNT );
 #endif
-	printf( _("  -m, --margin=NUMBERs       Set margin.(top,right,bottom,left)[%1$d,%2$d,%3$d,%4$d]\n"), DEFAULT_TOP_MARGIN, DEFAULT_RIGHT_MARGIN, DEFAULT_BOTTOM_MARGIN, DEFAULT_LEFT_MARGIN );
-	printf( _("  -o, --open=FILE            Use FILE as String.\n") );
-	printf( _("  -r, --rotate=NUMBER        Rotate \"banner\".(degree)[%d]\n"), DEFAULT_ROTATE );
-	printf( _("  -s, --size=NUMBER          Font size(Pt)[%d]\n"), DEFAULT_SIZE );
+	printf( "  -m, --margin=NUMBERs       Set margin.(top,right,bottom,left)[%1$d,%2$d,%3$d,%4$d]\n", DEFAULT_TOP_MARGIN, DEFAULT_RIGHT_MARGIN, DEFAULT_BOTTOM_MARGIN, DEFAULT_LEFT_MARGIN );
+	printf( "  -o, --open=FILE            Use FILE as String.\n" );
+	printf( "  -r, --rotate=NUMBER        Rotate \"banner\".(degree)[%d]\n", DEFAULT_ROTATE );
+	printf( "  -s, --size=NUMBER          Font size(Pt)[%d]\n", DEFAULT_SIZE );
 #ifdef HAVE_LIBNCURSES
-	printf( _("  -t, --time=NUMBER          Scroll delay.(micro seconds)[%d]\n"), DEFAULT_DELAY );
+	printf( "  -t, --time=NUMBER          Scroll delay.(micro seconds)[%d]\n", DEFAULT_DELAY );
 #endif
-	printf( _("  -v, --version              Show version.\n") );
-	printf( _("  -w, --width=NUMBER         Set Width.(<0:use terminal width,0:show all)[%d]\n"), DEFAULT_WIDTH );
+	printf( "  -v, --version              Show version.\n" );
+	printf( "  -w, --width=NUMBER         Set Width.(<0:use terminal width,0:show all)[%d]\n", DEFAULT_WIDTH );
 #ifdef HAVE_LIBNCURSES
-	printf( _("  -x, --x                    Scroll banner from right to left.(use ncurses)\n") );
-	printf( _("  -y, --y                    Scroll banner from up to down.(use ncurses)\n") );
-	printf( _("  -X, --X                    Scroll banner from left to right.(use ncurses)\n") );
-	printf( _("  -Y, --Y                    Scroll banner from down to up(use ncurses)\n") );
-	printf( _("  -z, --z                    Scroll banenr with 'h', 'j', 'k', 'l' key.(use ncurses)\n") );
+	printf( "  -x, --x                    Scroll banner from right to left.(use ncurses)\n" );
+	printf( "  -y, --y                    Scroll banner from up to down.(use ncurses)\n" );
+	printf( "  -X, --X                    Scroll banner from left to right.(use ncurses)\n" );
+	printf( "  -Y, --Y                    Scroll banner from down to up(use ncurses)\n" );
+	printf( "  -z, --z                    Scroll banenr with 'h', 'j', 'k', 'l' key.(use ncurses)\n" );
 #endif
 } /* }}} */
 
 int main( int argc, char* argv[] )
 {
 	setlocale(LC_ALL, "");
-	bindtextdomain(PACKAGE, LOCALEDIR);
-	textdomain(PACKAGE);
 
 	/* 変数宣言 {{{ */
 	bool useAntialias = DEFAULT_USE_ANTIALIAS;	// アンチエイリアスを使うか否か
