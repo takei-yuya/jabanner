@@ -30,7 +30,7 @@ AC_CHECK_HEADERS([fcntl.h libintl.h stdlib.h string.h sys/ioctl.h termios.h unis
 
 # Checks for fonts.
 AC_MSG_CHECKING(font)
-enable_font="`./find_font.sh`"
+test -z "${enable_font}" && enable_font="`./find_font.sh`"
 if test -n "$enable_font" ; then
 	# Set AC_ALL to handle UTF-8 filename
 	LC_ALL=ja_JP.UTF-8
