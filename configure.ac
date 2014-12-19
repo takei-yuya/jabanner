@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.63])
-AC_INIT([jabanner], [0.1.0], [takei.yuya _at_ gmail.com])
+AC_INIT([jabanner], [0.1.1], [takei.yuya _at_ gmail.com])
 AC_CONFIG_AUX_DIR([config])
 AC_CONFIG_MACRO_DIR([m4])
 AM_INIT_AUTOMAKE([foreign])

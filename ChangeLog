@@ -35,3 +35,8 @@
 -- src/jabanner.cc
 ---- change default font size
 ---- add key bind for 'H', 'J', 'K', 'L'...etc
+
+0.1.0 -> 0.1.1
+-- configure.ac
+-- find_font.sh
+---- refinement configure script
