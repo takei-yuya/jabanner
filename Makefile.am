@@ -5,4 +5,4 @@ src/jabanner: config.h
 
 ACLOCAL_AMFLAGS = -I m4
 
-EXTRA_DIST = config.rpath find_font.sh
+EXTRA_DIST = config.rpath autogen.sh jabanner.spec find_font.sh
