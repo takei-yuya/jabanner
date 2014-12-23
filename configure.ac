@@ -47,5 +47,8 @@ fi
 # Checks for library functions.
 AC_CHECK_FUNCS([dup2 setlocale])
 
-AC_CONFIG_FILES([Makefile src/Makefile])
+AC_CONFIG_FILES([Makefile src/Makefile
+                 docker-centos6/Dockerfile
+                 docker-centos7/Dockerfile
+                 ])
 AC_OUTPUT

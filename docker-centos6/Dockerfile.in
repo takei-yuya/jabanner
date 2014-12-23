@@ -1,0 +1,20 @@
+FROM centos:centos6
+MAINTAINER TAKEI Yuya <takei.yuya+github@gmail.com>
+
+RUN yum -y install @development tar gzip bzip2 xz
+RUN yum -y install rpm-build
+RUN yum -y install gd-devel vlgothic-p-fonts
+
+RUN mkdir -p /tmp/rpm/SOURCES
+COPY @PACKAGE_TARNAME@-@PACKAGE_VERSION@.tar.gz /tmp/rpm/SOURCES/
+
+RUN tar -C /tmp/ -o -vxf /tmp/rpm/SOURCES/@PACKAGE_TARNAME@-@PACKAGE_VERSION@.tar.gz
+WORKDIR /tmp/@PACKAGE_TARNAME@-@PACKAGE_VERSION@
+RUN ./configure --enable-font=/usr/share/fonts/vlgothic/VL-PGothic-Regular.ttf
+RUN make
+RUN make install
+
+CMD \
+  rpmbuild -D "_topdir /tmp/rpm/" -bb jabanner.spec; \
+  rpmbuild -D "_topdir /tmp/rpm/" -bs jabanner.spec; \
+  find /tmp/rpm/ -iname "@PACKAGE_TARNAME@-@PACKAGE_VERSION@*.rpm" -exec cp {} /tmp/output \;
